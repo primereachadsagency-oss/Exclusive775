@@ -18,90 +18,112 @@ body{
     color:#fff;
 }
 
+/* CENTER WRAPPER */
 .hero{
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:30px;
+    padding:15px;
 }
 
+/* CARD */
 .container{
-    max-width:700px;
     width:100%;
+    max-width:420px;
     background:#1a1a1a;
     border:1px solid #333;
-    border-radius:20px;
-    padding:40px;
+    border-radius:16px;
+    padding:16px;
     text-align:center;
-    box-shadow:0 0 30px rgba(255,215,0,.15);
 }
 
+/* IMAGE */
+.hero-img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:12px;
+}
+
+/* BADGE */
 .badge{
     display:inline-block;
     background:#ffcc00;
     color:#000;
-    padding:8px 18px;
-    border-radius:50px;
+    padding:6px 12px;
+    border-radius:30px;
     font-weight:bold;
-    margin-bottom:20px;
+    font-size:12px;
+    margin-bottom:10px;
 }
 
+/* TITLE */
 h1{
-    font-size:42px;
-    margin-bottom:15px;
+    font-size:22px;
+    margin-bottom:8px;
 }
 
+/* TEXT */
 p{
+    font-size:13px;
     color:#cfcfcf;
-    line-height:1.7;
-    margin-bottom:25px;
+    line-height:1.5;
+    margin-bottom:14px;
 }
 
+/* FEATURES */
 .features{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
-    margin:30px 0;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+    margin:14px 0;
 }
 
 .card{
     background:#252525;
-    padding:18px;
-    border-radius:12px;
+    padding:10px;
+    border-radius:10px;
 }
 
 .card h3{
     color:#FFD700;
-    margin-bottom:8px;
+    font-size:13px;
+    margin-bottom:4px;
 }
 
+.card p{
+    font-size:11px;
+    margin:0;
+    color:#aaa;
+}
+
+/* BUTTON */
 .cta{
-    display:inline-block;
-    margin-top:25px;
-    padding:16px 35px;
+    display:block;
+    width:100%;
+    margin-top:12px;
+    padding:12px;
     background:#FFD700;
     color:#000;
     text-decoration:none;
     font-weight:bold;
-    border-radius:50px;
-    transition:.3s;
-}
-
-.cta:hover{
-    transform:scale(1.05);
-}
-
-.footer{
-    margin-top:30px;
-    color:#999;
+    border-radius:30px;
     font-size:14px;
 }
 
-@media(max-width:600px){
-h1{
-font-size:32px;
+/* FOOTER */
+.footer{
+    margin-top:12px;
+    font-size:11px;
+    color:#888;
 }
+
+/* EXTRA SMALL MOBILE */
+@media (max-width:360px){
+    h1{font-size:20px;}
+    .hero-img{height:160px;}
 }
 </style>
 </head>
@@ -109,54 +131,49 @@ font-size:32px;
 <body>
 
 <section class="hero">
-
 <div class="container">
 
-<div class="badge">
-🔥 VIP PREMIUM ACCESS
-</div>
+<img src="your-image.jpg" class="hero-img" alt="banner">
 
-<h1>Unlock Exclusive Premium Content</h1>
+<div class="badge">🔥 VIP ACCESS</div>
 
-<p>
-Experience premium quality with secure delivery, quick support,
-and an easy ordering process.
-</p>
+<h1>Premium Content</h1>
+
+<p>Secure, fast and private access with instant delivery.</p>
 
 <div class="features">
 
 <div class="card">
-<h3>💎 HD Quality</h3>
-<p>Premium quality content.</p>
+<h3>HD</h3>
+<p>High Quality</p>
 </div>
 
 <div class="card">
-<h3>⚡ Instant Delivery</h3>
-<p>Fast access after confirmation.</p>
+<h3>⚡ Fast</h3>
+<p>Instant</p>
 </div>
 
 <div class="card">
-<h3>🔒 Private</h3>
-<p>Secure and confidential delivery.</p>
+<h3>🔒 Safe</h3>
+<p>Private</p>
 </div>
 
 <div class="card">
-<h3>📩 Fast Support</h3>
-<p>Quick response for every query.</p>
+<h3>📩 Help</h3>
+<p>24/7 Support</p>
 </div>
 
 </div>
 
 <a href="https://t.me/+IQ4ohKkRXGpkZjA1" class="cta">
-📩 Message Now
+Message Now
 </a>
 
 <div class="footer">
-Trusted Service • Secure Access • Fast Response
+Trusted • Secure • Private
 </div>
 
 </div>
-
 </section>
 
 </body>
